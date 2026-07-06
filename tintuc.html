@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tin tức - Website Thời Trang</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">FASHION WEB</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="tintuc.html" class="active">Tin tức</a></li>
+      <li><a href="xuhuong.html">Xu hướng</a></li>
+      <li><a href="lamdep.html">Làm đẹp</a></li>
+    </ul>
+  </nav>
+  <a href="login.html" class="btn-login">Đăng nhập</a>
+</header>
+
+<main>
+
+  <section class="article-flex">
+    <div class="bai-viet">
+      <span class="tag-danhmuc tag-tin-tuc">Tin tức</span>
+      <h2>Tuần lễ thời trang Paris khép lại với nhiều bất ngờ</h2>
+      <div class="meta">Đăng ngày 02/07/2026</div>
+      <img class="placeholder" src="thoitrangparis.jpg" alt="Tuần lễ thời trang Paris">
+      <p>Tuần lễ thời trang Paris mùa Thu 2026 vừa khép lại sau bảy ngày trình diễn, quy tụ nhiều nhà mốt danh tiếng cùng các gương mặt mới.</p>
+      <p>Nhiều bộ sưu tập năm nay chọn phom dáng rộng rãi, phá cách so với sự tối giản của các mùa trước. Bên cạnh đó, chất liệu bền vững cũng được nhiều thương hiệu chú trọng sử dụng.</p>
+
+      <h2 style="margin-top:30px;">Thương hiệu nội địa gây chú ý tại tuần lễ thời trang</h2>
+      <div class="meta">Đăng ngày 30/06/2026</div>
+      <p>Lần đầu góp mặt tại sự kiện quốc tế, các thương hiệu trong nước gây ấn tượng nhờ chất liệu truyền thống được làm mới theo phong cách hiện đại.</p>
+    </div>
+
+    <div class="lien-quan">
+      <h4>Bài viết liên quan</h4>
+      <ul>
+        <li><a href="xuhuong.html">Phong cách tối giản lên ngôi mùa Thu</a></li>
+        <li><a href="xuhuong.html">Denim trở lại mạnh mẽ</a></li>
+        <li><a href="lamdep.html">Trang điểm tự nhiên đang thịnh hành</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Bình luận</h2>
+    <form id="formBinhLuan" class="form-binh-luan">
+      <input type="text" id="tenNguoiDung" placeholder="Tên của bạn">
+      <textarea id="noiDungBinhLuan" placeholder="Viết bình luận của bạn..."></textarea>
+      <p id="thongBao"></p>
+      <button type="submit">Gửi bình luận</button>
+    </form>
+
+    <ul class="danh-sach-binh-luan">
+      <li>
+        <span class="ten">Hoài An</span>
+        <span class="thoi-gian">2 giờ trước</span>
+        <p>Rất thích phối màu năm nay, khác biệt so với các mùa trước!</p>
+      </li>
+      <li>
+        <span class="ten">Minh Quân</span>
+        <span class="thoi-gian">5 giờ trước</span>
+        <p>Bài viết hay, mong có thêm ảnh hậu trường.</p>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2026 Website Thời Trang - Bài tập thực hành
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
