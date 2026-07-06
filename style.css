@@ -1,0 +1,387 @@
+/* CSS dùng chung cho website Thời trang - kiểu tối giản, tông xanh */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #2f6690;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header + menu */
+header {
+  background: #fff;
+  border-bottom: 1px solid #e2e6ea;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2f6690;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #555;
+  font-size: 14px;
+}
+
+nav a.active,
+nav a:hover {
+  color: #2f6690;
+  font-weight: bold;
+}
+
+.btn-login {
+  background: #2f6690;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.btn-login:hover {
+  background: #244f70;
+  text-decoration: none;
+}
+
+/* Banner đầu trang */
+.banner {
+  background: #2f6690;
+  text-align: center;
+  padding: 60px 30px 50px;
+}
+
+.banner h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.banner p {
+  color: #cfe3f2;
+}
+
+/* Nội dung chính */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #222;
+  padding-left: 12px;
+  border-left: 4px solid #2f6690;
+}
+
+/* Danh sách chủ đề trang chủ */
+.chuyen-muc {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.chuyen-muc .box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  border-top: 4px solid #2f6690;
+}
+
+.chuyen-muc .box .icon {
+  font-size: 26px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.chuyen-muc .box h3 {
+  color: #2f6690;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.chuyen-muc .box ul li {
+  margin-bottom: 8px;
+  font-size: 13.5px;
+}
+
+.box-xanh { border-top-color: #2f6690; }
+.box-xanh h3 { color: #2f6690; }
+.box-xanh a { color: #2f6690; }
+
+.box-cam { border-top-color: #e07a5f; }
+.box-cam h3 { color: #e07a5f; }
+.box-cam a { color: #e07a5f; }
+
+.box-hong { border-top-color: #d1495b; }
+.box-hong h3 { color: #d1495b; }
+.box-hong a { color: #d1495b; }
+
+/* Sitemap */
+.sitemap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.sitemap h4 {
+  margin-bottom: 10px;
+  color: #2f6690;
+  font-size: 14px;
+}
+
+.sitemap > div:nth-child(2) h4 { color: #2f6690; }
+.sitemap > div:nth-child(3) h4 { color: #e07a5f; }
+.sitemap > div:nth-child(4) h4 { color: #d1495b; }
+
+.sitemap li {
+  margin-bottom: 6px;
+  font-size: 13.5px;
+}
+
+/* Bài viết chi tiết */
+.tag-danhmuc {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.tag-tin-tuc { background: #e6f0f7; color: #2f6690; }
+.tag-xu-huong { background: #fbeee8; color: #e07a5f; }
+.tag-lam-dep { background: #fbe8ec; color: #d1495b; }
+
+.bai-viet .meta {
+  color: #999;
+  font-size: 12.5px;
+  margin-bottom: 15px;
+}
+
+.bai-viet img.placeholder,
+.bai-viet .placeholder {
+  width: 100%;
+  height: 220px;
+  background: #e9edf1;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9aa5af;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.bai-viet p {
+  margin-bottom: 15px;
+  font-size: 14.5px;
+}
+
+.lien-quan {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.lien-quan h4 {
+  margin-bottom: 12px;
+  color: #2f6690;
+  font-size: 14px;
+}
+
+.lien-quan li {
+  margin-bottom: 10px;
+  font-size: 13.5px;
+}
+
+.article-flex {
+  display: flex;
+  gap: 30px;
+}
+
+.article-flex .bai-viet {
+  flex: 2;
+}
+
+.article-flex .lien-quan {
+  flex: 1;
+  height: fit-content;
+}
+
+/* Bình luận */
+.form-binh-luan {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  margin-bottom: 20px;
+}
+
+.form-binh-luan input,
+.form-binh-luan textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #dfe3e7;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.form-binh-luan textarea {
+  min-height: 80px;
+}
+
+.form-binh-luan button {
+  background: #2f6690;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.form-binh-luan button:hover {
+  background: #244f70;
+}
+
+#thongBao {
+  font-size: 13px;
+  color: #c0392b;
+  margin-bottom: 10px;
+}
+
+.danh-sach-binh-luan li {
+  background: #fff;
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  font-size: 13.5px;
+}
+
+.danh-sach-binh-luan .ten {
+  font-weight: bold;
+  color: #222;
+}
+
+.danh-sach-binh-luan .thoi-gian {
+  color: #999;
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+/* Trang đăng nhập */
+.login-box {
+  max-width: 380px;
+  margin: 60px auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 35px 30px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.login-box h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 22px;
+  color: #222;
+}
+
+.login-box label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #555;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #dfe3e7;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.login-box button {
+  width: 100%;
+  background: #2f6690;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.login-box button:hover {
+  background: #244f70;
+}
+
+/* Footer */
+footer {
+  background: #fff;
+  color: #999;
+  text-align: center;
+  padding: 20px;
+  font-size: 12.5px;
+  border-top: 1px solid #e2e6ea;
+}
+
+/* Responsive đơn giản */
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    gap: 12px;
+  }
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .chuyen-muc,
+  .sitemap {
+    grid-template-columns: 1fr;
+  }
+  .article-flex {
+    flex-direction: column;
+  }
+}
