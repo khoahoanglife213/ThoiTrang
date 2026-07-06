@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Làm đẹp - Website Thời Trang</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">FASHION WEB</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="tintuc.html">Tin tức</a></li>
+      <li><a href="xuhuong.html">Xu hướng</a></li>
+      <li><a href="lamdep.html" class="active">Làm đẹp</a></li>
+    </ul>
+  </nav>
+  <a href="login.html" class="btn-login">Đăng nhập</a>
+</header>
+
+<main>
+
+  <section class="article-flex">
+    <div class="bai-viet">
+      <span class="tag-danhmuc tag-lam-dep">Làm đẹp</span>
+      <h2>Routine dưỡng da 5 bước cho mùa hanh khô</h2>
+      <div class="meta">Đăng ngày 25/06/2026</div>
+      <img class="placeholder" src="5cachduongda.jpg" alt="Cách bước dưỡng da trong mùa hanh khô">
+      <p>Thời tiết hanh khô khiến da dễ mất nước, bong tróc. Dưới đây là quy trình 5 bước giúp da giữ ẩm và khỏe mạnh suốt mùa lạnh.</p>
+      <p>Bước 1-2: Làm sạch da bằng sữa rửa mặt dịu nhẹ, sau đó dùng toner cân bằng độ pH. Bước 3-5: Serum cấp nước, kem dưỡng khóa ẩm và kem chống nắng vào ban ngày.</p>
+
+      <h2 style="margin-top:30px;">Trang điểm tự nhiên đang thịnh hành</h2>
+      <div class="meta">Đăng ngày 23/06/2026</div>
+      <p>Lớp nền mỏng nhẹ, tôn da tự nhiên thay vì che phủ hoàn toàn đang được nhiều người lựa chọn. Chăm sóc da kỹ trước khi trang điểm giúp lớp nền lên đều và bền màu hơn.</p>
+    </div>
+
+    <div class="lien-quan">
+      <h4>Bài viết liên quan</h4>
+      <ul>
+        <li><a href="xuhuong.html">Phong cách tối giản lên ngôi mùa Thu</a></li>
+        <li><a href="tintuc.html">Tuần lễ thời trang Paris khép lại</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Bình luận</h2>
+    <form id="formBinhLuan" class="form-binh-luan">
+      <input type="text" id="tenNguoiDung" placeholder="Tên của bạn">
+      <textarea id="noiDungBinhLuan" placeholder="Viết bình luận của bạn..."></textarea>
+      <p id="thongBao"></p>
+      <button type="submit">Gửi bình luận</button>
+    </form>
+
+    <ul class="danh-sach-binh-luan">
+      <li>Chưa có bình luận nào. Hãy là người đầu tiên chia sẻ ý kiến!</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2026 Website Thời Trang - Bài tập thực hành
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
