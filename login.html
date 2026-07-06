@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đăng nhập - Website Thời Trang</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">FASHION WEB</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="tintuc.html">Tin tức</a></li>
+      <li><a href="xuhuong.html">Xu hướng</a></li>
+      <li><a href="lamdep.html">Làm đẹp</a></li>
+    </ul>
+  </nav>
+  <a href="login.html" class="btn-login">Đăng nhập</a>
+</header>
+
+<main>
+  <div class="login-box">
+    <h1>Đăng nhập thành viên</h1>
+    <form id="formDangNhap">
+      <label for="taiKhoan">Tên đăng nhập</label>
+      <input type="text" id="taiKhoan" placeholder="Nhập tên đăng nhập">
+
+      <label for="matKhau">Mật khẩu</label>
+      <input type="password" id="matKhau" placeholder="Nhập mật khẩu">
+
+      <p id="thongBaoLogin" style="color:red; font-size:13px; margin-bottom:12px;"></p>
+
+      <button type="submit">Đăng nhập</button>
+    </form>
+  </div>
+</main>
+
+<footer>
+  &copy; 2026 Website Thời Trang - Bài tập thực hành
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
